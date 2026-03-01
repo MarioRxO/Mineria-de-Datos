@@ -1,0 +1,9 @@
+customer_id,customer_name,city,segment
+C001,Ana,CDMX,Consumer
+C002,Luis,GDL,Corporate
+C003,Marta,MTY,Consumer
+C004,Sofia,QRO,Small Biz
+C005,Diego,GDL,Consumer
+C006,Elena,MER,Consumer
+C007,Paula,PUE,Corporate
+C008,Ramon,CDMX,Small Biz

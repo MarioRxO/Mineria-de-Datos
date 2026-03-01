@@ -1,0 +1,7 @@
+order_id,order_date,line_id,customer_id,product_id,qty,channel
+2001,2026-01-02,1,C001,P10,2,web
+2002,2026-01-02,2,C002,P20,1,store
+2003,2026-01-03,3,C003,P20,3,web
+2004,2026-01-04,4,C001,P30,1,app
+2005,2026-01-05,5,C004,P10,5,web
+2006,2026-01-05,6,C005,P40,1,store
