@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 df = pd.read_csv("Customer_support_data.csv")
 # Extract relative columns and rename them
 df = df[["Customer Remarks", "CSAT Score"]].rename(columns={"Customer Remarks": "texto", "CSAT Score": "sentimiento"})
-# Drop missing text rows to prevent CountVectorizer    errors
+# Drop missing text rows to prevent CountVectorizer errors
 df = df.dropna(subset=["texto"])
 
 print(df.head())
