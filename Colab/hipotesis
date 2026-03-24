@@ -1,0 +1,29 @@
+import numpy as np
+import scipy.stats as stats
+import pandas as pd 
+
+#DAtos del problema
+nu_0= 225 #Hipotesis nula
+n = 36  #Tamaño de la muestra
+x_barra = 230 #Media muestral
+s = 15  #Desviación estándar muestral
+#Nivel de significancia
+alpha = 0.05
+
+#Calculamos el estadístico t
+z = (x_barra - nu_0) / (s / np.sqrt(n))
+
+z_critical = stats.norm.ppf(1 - alpha)
+
+
+if z > z_critical:
+    print("Rechazamos la hipótesis nula")
+else:
+    print("No rechazamos la hipótesis nula")
+
+df = pd.DataFrame({
+    'Parametros':['Media Teorica','Media Muestral','Desviación Estándar Muestral', 'Tamaño de la muestra', 'Nivel de significancia'],
+    'Valores':[nu_0, x_barra, s, n, alpha]
+})
+
+print(df)
